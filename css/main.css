@@ -19,3 +19,7 @@ div.full-url{
     border: solid 1px;
     border-color: #AAAAAA;
 }
+
+div.full-url p{
+    display: inline;
+}

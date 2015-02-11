@@ -18,7 +18,6 @@ $(document).keypress(function(event){
     //  current unactive
     if(event.which == 47 && !isActive){
         addDiv();
-        isActive = true;
         return;
     }
 
@@ -43,7 +42,6 @@ $(document).keydown(function(event){
     // press esc
     if(event.which == 27 && isActive){
         removeDiv();
-        isActive = false;
         return;
     }
 
@@ -56,29 +54,32 @@ $(document).keydown(function(event){
     // enter
     if(isActive && event.which == 13){
         // open new tab
-        var str = $('#full-url-input').text();
+        var str = $('#full-url').text();
         console.log(str);
         if(validUrl(str)){
             window.open(str,'_blank');  
         }
         else{
-            window.open('http://google.com/search?q='+str, '_blank');
+            window.open('http://google.com/search?q='+$('#full-url-input').text(), '_blank');
         }
+        removeDiv();
     }
 });
 
 // add div at bot for enter URL
 function addDiv(){
+    isActive = true;
     var $div = $("<div>")
-        .attr("id", "full-url-input")
         .attr("class", "full-url")
+        .append("<p id='full-url-http'>http://</p>")
         .append("<p id='full-url-input'></p>")
-        .text('http://')
+        
     $(document.body).append($div);
 }
 
 // remove div at bot for enter URL
 function removeDiv(){
+    isActive = false;
     $(".full-url").remove();
 }
 

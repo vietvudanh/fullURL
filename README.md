@@ -9,6 +9,7 @@ Simple Chrome's extension for enter URL, even in Fullscreen mode
     3. Enter
 
 * if the URL in the form of 'abc' instead of 'abc.xyz', the extension perfrom Google search on the URL
+* press esc to turn the input box off
 
 # Download
 
