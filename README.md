@@ -12,7 +12,7 @@ Simple Chrome's extension for enter URL, even in Fullscreen mode
 
 # Download
 
-The .crx file can be downloaded from [here](https://raw.githubusercontent.com/vietvudanh/fullURL/master/css/main.css)
+The .crx file can be downloaded from [here](https://raw.githubusercontent.com/vietvudanh/fullURL/master/bin/fullURL.crx)
 
 # About
 
