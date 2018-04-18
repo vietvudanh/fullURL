@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Full URL options</title>
+    <style>
+        #message {
+            float: left;
+        }
+        
+        #setShortCut {
+            float: right;
+        }
+        
+        .container {
+            padding: 10px;
+        }
+        
+        .container:after {
+            content: "";
+            display: block;
+            height: 0;
+            clear: both;
+        }
+        
+        #inputShortCut {
+            margin: auto;
+            height: 40px;
+            width: 300px;
+            border: solid 1px;
+            border-color: #BD4990;
+            border-radius: 2px;
+            text-align: center;
+            font-size: 15px;
+        }
+        
+        .msg-set {
+            clear: both;
+            margin: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <p>* If you provide a valid URL, the browser open it. Or not, perform Google search on it.</p>
+        <p>Set shortcut to open extension in browser.</p>
+        <p>* Click this option window and press combination. Click set when done.</p>
+        <p id="inputShortCut"></p>
+        <div class="msg-set">
+            <span id="message"></span>
+            <button id="setShortCut">Set</button>
+        </div>
+</body>
+
+<script src="../js/options.js" type="text/javascript"></script>
+<script src="../third-party/jquery-1.11.2.min.js" type="text/javascript"></script>
+
+</html>
