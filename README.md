@@ -2,6 +2,8 @@
 
 Simple Chrome's extension for enter URL, even in Fullscreen mode
 
+Currently available on [Chrome Store](https://chrome.google.com/webstore/detail/fullurl/pdjpbbglbjbkfanaoipalojfdeiffenh?hl=vi)
+
 # Usage
 
     1. Press '/'
